@@ -1,0 +1,96 @@
+/* Import Tailwind base styles */
+@tailwind base;
+
+/* Import Tailwind component styles */
+@tailwind components;
+
+/* Import Tailwind utility styles */
+@tailwind utilities;
+
+/* Global body styles */
+body {
+  @apply bg-gray-50 text-gray-900 font-sans;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container styles */
+.container {
+  @apply max-w-7xl mx-auto px-4;
+}
+
+/* Header styles */
+header {
+  @apply bg-blue-700 text-white py-6 shadow-md;
+}
+
+header h1 {
+  @apply text-5xl font-extrabold text-center;
+}
+
+/* Sidebar styles */
+.sidebar {
+  @apply bg-white shadow-lg w-72 h-screen fixed;
+}
+
+.sidebar a {
+  @apply flex items-center text-blue-700 py-3 px-5 hover:bg-blue-200;
+  font-size: 1.125rem; /* Larger font size */
+}
+
+.sidebar a svg {
+  @apply mr-3;
+}
+
+/* Main content styles */
+main {
+  @apply ml-72 p-10;
+}
+
+/* Footer styles */
+footer {
+  @apply bg-gray-100 text-center py-5 mt-10;
+}
+
+footer p {
+  @apply text-sm text-gray-600;
+}
+
+/* Heading styles */
+h1 {
+  @apply text-3xl font-bold mb-4;
+}
+
+/* Table styles */
+table {
+  @apply w-full border-collapse bg-white shadow-md rounded-lg;
+}
+
+/* Table header and cell styles */
+th, td {
+  @apply border-b p-5 text-left;
+  font-size: 1.125rem; /* Larger font size */
+}
+
+/* Table header specific styles */
+th {
+  @apply text-gray-700 font-semibold;
+}
+
+/* Table cell specific styles */
+td {
+  @apply text-gray-800;
+}
+
+/* Status badge styles */
+.status-delivered {
+  @apply bg-green-100 text-green-700 px-3 py-1 rounded-full;
+}
+
+.status-on-the-way {
+  @apply bg-blue-100 text-blue-700 px-3 py-1 rounded-full;
+}
+
+.status-delayed {
+  @apply bg-red-100 text-red-700 px-3 py-1 rounded-full;
+}
