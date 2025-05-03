@@ -1,7 +1,14 @@
+import { useEffect } from 'react';
 import Sidebar from '../components/Sidebar';
 import Dashboard from '../components/Dashboard';
 
 export default function Home() {
+  useEffect(() => {
+    console.log('Rendering Home page');
+  }, []);
+
+  console.log('Rendering Home Page');
+
   return (
     <div className="min-h-screen flex">
       {/* Sidebar */}
@@ -20,6 +27,7 @@ export default function Home() {
         </header>
         <main className="p-10 bg-pastelGreen flex">
           <div className="flex-1">
+            {console.log('Rendering Dashboard Component')}
             <Dashboard />
           </div>
           {/* Alert Feed / Activity Log */}
